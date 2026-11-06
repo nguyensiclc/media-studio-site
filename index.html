@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Media Studio</title>
+  <style>
+    :root { --bg:#0f1115; --panel:#171a21; --text:#e6e8ee; --muted:#8b93a5; --accent:#7c5cff; }
+    body { margin:0; font-family:'Segoe UI',system-ui,sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
+    header, main, footer { max-width:820px; margin:0 auto; padding:24px 20px; }
+    header { display:flex; align-items:center; gap:12px; }
+    header img { width:44px; height:44px; border-radius:10px; }
+    nav a { color:var(--text); margin-left:16px; }
+    h1 { font-size:34px; margin:24px 0 8px; }
+    .muted { color:var(--muted); }
+    .card { background:var(--panel); border-radius:12px; padding:18px 20px; margin:14px 0; }
+    a { color:#9fb7ff; }
+    footer { border-top:1px solid #2a2f3a; color:var(--muted); font-size:14px; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="app-icon-1024.png" alt="Media Studio" />
+    <strong>Media Studio</strong>
+    <nav style="margin-left:auto">
+      <a href="terms.html">Terms of Service</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Media Studio</h1>
+    <p class="muted">A desktop app (Windows) for creating short narrated videos and sharing them to TikTok.</p>
+    <div class="card">
+      <h3>What it does</h3>
+      <ul>
+        <li>Writes a video script from a topic using an AI assistant.</li>
+        <li>Generates scene images (Canva, Google Flow) and voice-over (text-to-speech) on your computer.</li>
+        <li>Assembles the final MP4 locally with FFmpeg.</li>
+        <li>Optionally uploads the finished video to <em>your own</em> TikTok account, either as a draft in your TikTok inbox
+          or as a post, only after you sign in with TikTok and confirm each upload.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>TikTok integration</h3>
+      <p>Media Studio uses TikTok Login Kit to let you connect your account and the Content Posting API to upload videos you
+        created. You choose the caption, privacy level and interaction settings before anything is posted. You can disconnect
+        at any time from the app's Settings or from TikTok's "Manage app permissions".</p>
+    </div>
+  </main>
+  <footer>
+    <a href="terms.html">Terms of Service</a> · <a href="privacy.html">Privacy Policy</a> ·
+    <a href="https://github.com/nguyensiclc/media-studio-site/issues">Contact</a>
+  </footer>
+</body>
+</html>
